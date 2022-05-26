@@ -1,0 +1,116 @@
+// @import '../../../variables';
+
+// .Dropdown {
+//     font-family: $ff-common;
+//     margin-bottom: 20px;
+
+//     &:last-child {
+//         margin-bottom: 0;
+//     }
+
+//     &.Closed {
+//         .DropdownHeader {
+            
+            
+//             .fas {
+//                 transform: rotate(180deg);
+//             }
+//         }
+
+//         .DropdownBody {
+//             height: 0;
+//         }
+
+//         // .DropdownOption {
+//         //     position: relative;
+//         // }
+
+//         // .DropdownOption {
+//         //     position: absolute;
+//         //     width: 100%;
+//         //     top: 0;
+//         //     left: 0;
+//         // }
+//     }
+
+//     &Header {
+//         background-color: #eee;
+//         border: 1px solid #eee;
+//         border-radius: 3px 3px 0 0;
+//         padding: 15px;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         cursor: pointer;
+//         user-select: none;
+//         position: relative;
+//         z-index: 2;
+
+//         .fas {
+//             position: relative;
+//             top: 1px;
+//             transition: transform 200ms ease;
+//         }
+
+//         strong::first-letter {
+//             text-transform: capitalize;
+//         }
+//     }
+
+//     &Body {
+//         // height: 100%;
+//         transition: height 300ms ease;
+//     }
+// }
+
+@import '../../../variables';
+
+.Dropdown {
+    font-family: $ff-common;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &.Closed {
+        .DropdownHeader {
+            .fas {
+                transform: rotate(180deg);
+            }
+        }
+
+        .DropdownBody {
+            height: 0;
+        }
+    }
+
+    &Header {
+        background-color: #eee;
+        border: 1px solid #eee;
+        border-radius: 3px 3px 0 0;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+        z-index: 2;
+
+        .fas {
+            position: relative;
+            top: 1px;
+            transition: 200ms ease;
+        }
+
+        strong::first-letter {
+            text-transform: capitalize;
+        }
+    }
+
+    &Body {
+        height: 100%;
+        transition: height 300ms ease;
+    }
+}

@@ -1,0 +1,14 @@
+.Header {
+    padding: 20px;
+    background-color: #eee;
+    flex-basis: 100%;
+
+    .HeaderWrapper {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

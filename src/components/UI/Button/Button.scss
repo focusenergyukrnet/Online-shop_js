@@ -1,0 +1,34 @@
+@import '../../../variables';
+
+.Button {
+    padding: 10px 25px;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: $blue;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 200ms ease;
+    font-family: $ff-common;
+
+    &:hover {
+        background-color: darken($blue, 10%);
+    }
+
+    &.Alternative {
+        font-size: 1rem;
+        border: 3px solid $green;
+        color: $green;
+        background-color: transparent;
+        padding: 7px 25px;
+        transition:
+            border-color 300ms ease,
+            color 300ms ease;
+
+        &:hover {
+            border-color: darken($green, 10%);
+            color: darken($green, 10%);
+        } 
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../variables';
+
+.Search {
+    position: relative;
+
+    .Input {
+        padding-right: 35px;
+    }
+
+    .fa-search {
+        font-size: 1.1rem;
+        position: absolute;
+        top: calc(50% - 1.1rem / 2 + 1px);
+        right: 10px;
+    }
+    
+    .focused {
+        color: $blue;
+    }
+}
+

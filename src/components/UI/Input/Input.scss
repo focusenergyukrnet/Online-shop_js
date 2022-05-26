@@ -1,0 +1,19 @@
+@import '../../../variables';
+
+.Input {
+    font-size: 1rem;
+    padding: 10px;
+    font-family: $ff-common;
+    outline: none;
+    border: 1px solid $darkgrey;
+    border-radius: 2px;
+    min-width: 350px;
+
+    &:focus {
+        border-color: $blue;
+
+        &::placeholder {
+            color: $blue;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import '../../variables';
+
+$size: 80px;
+
+.Logo {
+    display: flex;
+    align-items: center;
+
+    .LogoWrapper {
+        max-width: $size;
+        background-color: #fff;
+        margin-right: 20px;
+        border-radius: 50%;
+        border: 2px solid $blue;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        font-family: $ff-logo;
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+}

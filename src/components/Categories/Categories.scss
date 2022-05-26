@@ -1,0 +1,34 @@
+@import '../../variables';
+
+.Categories {
+    display: flex;
+    
+    .CategoryButton {
+        background-color: $darkblue;
+        color: #fff;
+        font-family: $ff-heading;
+        padding: 12px 0;
+        flex-basis: calc(100% / 3 - 10px);
+        margin-right: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: 3px solid transparent;
+        user-select: none;
+        transition:
+            background-color 200ms ease,
+            border 200ms ease,
+            color 200ms ease;
+
+        &:first-child {
+            margin-left: 10px;
+        }
+
+        &.Active,
+        &:hover {
+            background-color: #fff;
+            border: 3px solid $darkblue;
+            color: $darkblue;
+        }
+    }
+}

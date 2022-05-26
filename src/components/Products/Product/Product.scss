@@ -1,0 +1,64 @@
+@import '../../../variables';
+
+.Product {
+    background-color: #fff;
+    flex-basis: calc(100% / 3 - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-family: $ff-common;
+
+    .TopLine {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .ProductCategory,
+    .ProductModel,
+    .ProductManufacturer {
+        font-family: $ff-heading;
+    }
+
+    .ImageWrapper {
+        height: 250px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .ProductManufacturer {
+        color: $darkblue;
+    }
+
+    .ProductModel {
+        line-height: 35px;
+        margin-bottom: 5px;
+    }
+
+    .ProductCountry {
+        color: $darkred;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .ProductWarranty {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .ProductDescription {
+        background-color: #edf4f7;
+        padding: 10px;
+        border-radius: 3px;
+        margin-bottom: 20px;
+    }
+}

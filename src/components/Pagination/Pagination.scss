@@ -1,0 +1,47 @@
+@import '../../variables';
+
+.Pagination {
+    flex-basis: 100%;
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+
+    .PaginationButton {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #fff;
+        color: $blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $ff-common;
+        font-size: .8rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-right: 10px;
+        user-select: none;
+        transition:
+            background-color 200ms ease,
+            color 200ms ease,
+            box-shadow 200ms ease;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            box-shadow: 0 0 5px 6px #e5e0e0;
+        }
+
+        &.Active {
+            background-color: $blue;
+            color: #fff;
+            cursor: default;
+
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+}
